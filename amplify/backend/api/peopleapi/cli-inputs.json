@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "paths": {
+    "/people": {
+      "name": "/people",
+      "lambdaFunction": "peoplefuntion",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "read"
+        ]
+      }
+    },
+    "/items": {
+      "name": "/items",
+      "lambdaFunction": "itemapi",
+      "permissions": {
+        "setting": "protected",
+        "auth": [
+          "read"
+        ],
+        "guest": [
+          "read"
+        ]
+      }
+    }
+  }
+}
